@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML语法学习</title>
+</head>
+<body>
+    <h1>h1来写一级标题</h1>
+    br用来换行,例如<br>换行啦!<br>
+    p为段落标签,有一个属性align,用来对齐,可为<p align="left">left</p> <p align="center">center</p><p align="right">right</p>
+    hr为水平线段,有属性size(宽度),width(长度),align(对齐),noshade(有阴影),color(颜色)
+    <hr>
+    <hr align="center" size="30">
+    <hr align="center" noshade size="30">
+    <hr align="center" noshade width="50%" size="10">
+    <hr align="center" noshade width="100" size="10" color="#cc0000">
+    <hr align="center" noshade width="200" size="50" color="#00ffff">
+    <hr align="center" noshade width="200" size ="50" color="aa00ff">
+    <br> 文字设计: 用font,有size(大小),face(字体),color(颜色)<br>
+    <font color="blue" face="楷体_GB2312" size="7">我就是他nnd的字体</font><br>
+    <b>b用来设置粗体</b><br>
+    <u>u用来设置下划线</u><br>
+    <i>i用来设置斜体</i><br>
+    你奶奶<sup>sup用来设置为上标</sup><br>
+    <blik>blink设置为闪烁(非标准元素)</blik><br>
+    <ul>
+        <li>ul作为无序列表(内嵌li作为子值)</li>
+        <li>废物学你妹的html5</li>
+    </ul>
+    <ol>
+        <li>ol作为有序列表</li>
+        <li>辣鸡别学了去打游戏吧</li>
+    </ol>
+
+    表格设置<br>
+    标签有各种属性,align(对齐),bgcolor(背景色),border(边框宽度),width(宽度),height(高度),cellpadding(边框宽度),cellspacing(边框和表格框宽度),
+    <table  bgcolor="#ffebcd"x border="1" width="300" cellpadding="5"cellspacing="20" bordercolor="#ffff99">
+        <caption>表格用table起头,captain为表头</caption>
+        <tr>
+            <th>(tr为行,th表头,自动变粗)</th>
+            <th>傻逼宅男没女人喜欢你的</th>
+        </tr>
+        <tr>
+            <td align="right">td为表格具体数据</td>
+            <td>天天打游戏吃外卖简直就是废材</td>
+        </tr>
+    </table><br>
+
+    <b><u><i></吃>表格合并老子不学了,傻逼玩意</i></u></b>
+
+    <br>
+    a可以设置链接,属性href设置指向的地址<br>
+  <a href="fuckyou.html">我链接到你的祖坟上蹦迪</a><br>
+    <br>图片的设置,用img 有属性src(路径),width,height,border,align,alt(图片不加载的时候文字说明)<br>
+    <a href="fuckyou.html"><img src="images/hello.png"alt="傻逼,加载不出来了吧哈哈哈" align="center"></a>
+    <br>
+    <br>
+    表单内容:用form,属性有text(文本框),password(密码框),radio(单选按钮checked默认被选),checkbox(复选框checked默认被选),
+    <br>reset重置按钮,button(普通按钮),submit(提交按钮,action设置的网页),image(图片和按钮一样),<br>
+    欢迎注册<br>
+    <form>
+        输入狗日的账号:<input type="text"><br>
+        输入老子的密码::<input type="password"><br>
+        选择你的性别:
+        <input type="radio" name="sex",checked>人妖
+        <input type="radio" name="sex",checked>无性人
+        <input type="radio" name="sex",checked>双性人<br>
+        选择爱好:
+        <input type="checkbox">吃人
+        <input type="checkbox">放火
+        <input type="checkbox">看涩图
+        <input type="checkbox" checked>掏粪<br>
+        <input type="submit"value="快注册">
+        <input type="reset" value="清空">
+        <input type="button"value="普通按钮">
+
+    </form>
+
+    select (表示下拉菜单),option(选项内容,有属性multiple多选,size下拉的显示项目数)<br>
+    填写你的个人信息:
+    <textarea rows="5",cols="20"></textarea><br>
+    选择你的老巢:
+    <select>
+        <option>霍格沃茨</option>
+        <option>加勒比</option>
+        <option>非洲</option>
+        <option>哥谭</option>
+
+    </select>
+    <br>
+    选择你的爱好:<br>
+    <select multiple  size="5">
+        <option>唱</option>
+        <option>跳</option>
+        <option>rap</option>
+        <option>篮球</option>
+    </select>
+
+
+</body>
+</html>
