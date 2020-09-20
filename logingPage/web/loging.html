@@ -1,14 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: moko
-  Date: 2020/9/19
-  Time: 17:12
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
   <head>
     <title>便利驿站_登录</title>
+    <meta charset="utf-8">
     <style type="text/css">
       .text_font{font-size: 14px}
       #hyper_link1{ color:deepskyblue;text-decoration: none}
@@ -57,16 +51,19 @@
         box-shadow: 0 2px 0 gray;
       }
       .input_box {
-        width: 70%;
-        padding: 8px 20px;
+        margin-left: 14%;
         margin-top: 20px;
-        margin-left: 15%;
-        text-align: left;
+        width: 170px;
+        height: 25px;
         border:2px solid;
         border-radius:5px;
         border-color: lightgray;
       }
       #submit{
+        margin-left: 14%;
+        margin-top: 20px;
+        width: 180px;
+        height: 32px;
         border:2px solid;
         border-radius:5px;
         border-color: lightgray;
@@ -160,18 +157,18 @@
       <div  align="right"> <font class="text_font">欢迎光临本店请<a  id="hyper_link1" href="http://www.baidu.com" >登录</a>,新用户?<a id="hyper_link2" href="http://www.baidu.com">免费注册</a></font>
       我的订单 | 查看购物车 | 帮助中心 | 在线客服</div><br>
       <div id="box">
-       <a href="http://localhost:8080/logingPage_war_exploded/index.jsp"><img id="logo_location"src="/img/logo.png"  alt="can't load image"></a>
+       <a href="http://localhost:8080/logingPage_war_exploded/index.jsp"><img id="logo_location"src="./img/logo.png"  alt="can't load image"></a>
         <span id="text_border">&ensp;登录</span>
       </div>
       <br><br><br><br><br><br>
     <div id="big_loging_box">
-      <img src="/img/login_red_bg.png">
+      <img src="./img/login_red_bg.png">
       <div id="small_loging_box">
         <form >
           <br>
           <input class="input_box" type="text" value="账号" >
           <input class="input_box" type="password" >
-          <input class="input_box" id="submit" type="submit" value="登录"><br>
+          <input  id="submit" type="submit" value="登录">
           <input id="check" type="checkbox"checked>自动登录<br>
           <a id="lost_pw" href="http://www.baidu.com">忘记密码?</a> | <a href="http://www.baidu.com">注册</a>
         </form>
@@ -179,9 +176,9 @@
     </div>
 
       <div id="down_box">
-        <img id="img_assur1" src="/img/Quality_assurance.gif"><span class="assurance">正品保障</span>
-        <img class="img_assur2" src="/img/Seven_days.gif"><span class="assurance">七天包退</span>
-        <img class="img_assur2" src="/img/Fake_a_lose_three.gif"><span id="assurance1">假一赔三</span>
+        <img id="img_assur1" src="./img/Quality_assurance.gif"><span class="assurance">正品保障</span>
+        <img class="img_assur2" src="./img/Seven_days.gif"><span class="assurance">七天包退</span>
+        <img class="img_assur2" src="./img/Fake_a_lose_three.gif"><span id="assurance1">假一赔三</span>
         <br>
         <br>
         <div id="license_font">
@@ -201,8 +198,8 @@
 
 
         <div id="big_image_box">
-          <img id="image_box1" src="/img/unionpay_ico.gif">
-          <img id="image_box2" src="/img/alipay_ico.gif">
+          <img id="image_box1" src="./img/unionpay_ico.gif">
+          <img id="image_box2" src="./img/alipay_ico.gif">
         </div>
 
       </div>
