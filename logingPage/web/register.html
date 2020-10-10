@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>便利驿站_注册</title>
+    <script type="text/javascript" src="register.js"></script>
     <style>
         #image_box1{
             border:2px solid;
@@ -166,10 +167,39 @@
             left:53%;
         }
         #password_note{
+            color: red;
             position: absolute;
             top:17%;
             left:58%;
         }
+        #rePassword_note{
+            color: red;
+            position: absolute;
+            top:23%;
+            left:58%;
+        }
+        #email_note{
+            color: red;
+            position: absolute;
+            top:50%;
+            left:58%;
+        }
+        #phone_note{
+            color: red;
+            position: absolute;
+            top:63%;
+            left:58%;
+        }
+        #btn{
+            color: red;
+        }
+        #corret_num_note{
+            color: red;
+            position: absolute;
+            top:70%;
+            left:58%;
+        }
+
 
     </style>
 </head>
@@ -190,11 +220,11 @@
            </div>
         <div class="form_naviga2" >
             登录密码:
-            <input type="password">
+            <input id=pwd type="password" onblur="checkPwd()">
         </div>
         <div class="form_naviga2" >
            确认密码:
-            <input type="password">
+            <input id=repwd type="password" onblur="reCheckPwd()">
         </div>
         <div class="form_naviga2" >
             商业名称:
@@ -233,7 +263,7 @@
 
         <div class="form_naviga2" >
             电子邮箱:
-            <input type="text">
+            <input id =email type="text" onblur="checkEmail()">
         </div>
         <div class="form_naviga2" >
             QQ:
@@ -241,11 +271,11 @@
         </div>
         <div class="form_naviga2" >
             手机:
-            <input type="text">
+            <input id="phone"  type="text" onblur="checkPhone()">
         </div>
         <div class="form_naviga2" >
             手机验证码:
-            <input type="text">
+            <input id="corret_num" type="text"onblur="checkCorretNum()">
         </div>
         <div id="form_checkbox">
             <input type="checkbox" checked >我已阅读并同意<a id="hyper_link_license" href="http://www.baidu.com">《用户注册协议》</a>
@@ -263,6 +293,11 @@
             <div id="password_note">
                 *由6-20位字母和数字组成
             </div>
+        <div id="rePassword_note"></div>
+        <div id="email_note"></div>
+        <div id="phone_note"></div>
+        <div id="corret_num_note"></div>
+
     </div>
 
     <div id="down_box">
