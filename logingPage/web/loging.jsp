@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+  <head><script type="text/javascript" src="jq_source/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="jq_script/loging_jq.js"></script>
     <title>便利驿站_登录</title>
     <meta charset="utf-8">
-    <script type="text/javascript" src="loginger.js"></script>
     <style type="text/css">
       .text_font{font-size: 14px}
       #hyper_link1{ color:deepskyblue;text-decoration: none}
@@ -153,11 +154,18 @@
       #checkPwd{
 
       }
+      #username_note{
+        color: green;
+        position: absolute;
+        left:53%;
+      }
       #password_note{
         color: green;
         position: absolute;
-        top:48%;
         left:53%;
+      }
+      #log_pwd{
+
       }
 
     </style>
@@ -167,7 +175,7 @@
       <div  align="right"> <font class="text_font">欢迎光临本店请<a  id="hyper_link1" href="http://www.baidu.com" >登录</a>,新用户?<a id="hyper_link2" href="http://www.baidu.com">免费注册</a></font>
       我的订单 | 查看购物车 | 帮助中心 | 在线客服</div><br>
       <div id="box">
-       <a href="loging.html"><img id="logo_location"src="./img/logo.png"  alt="can't load image"></a>
+       <a href="loging.jsp"><img id="logo_location"src="./img/logo.png"  alt="can't load image"></a>
         <span id="text_border">&ensp;登录</span>
       </div>
       <br><br><br><br><br><br>
@@ -176,13 +184,13 @@
       <div id="small_loging_box">
         <form >
           <br>
-          <input class="input_box" type="text" value="账号" >
-          <div id="checkPwd"><input class="input_box" type="password" onblur="checkPwd()"></div>
+          <input id="username" class="input_box" type="text" ><span id="username_note"></span>
+          <div id="checkPwd"><input class="input_box" id="log_pwd" type="password" onblur="checkPwd()"><span id="password_note"></span></div>
           <input  id="submit" type="submit" value="登录">
           <input id="check" type="checkbox"checked>自动登录<br>
-          <a id="lost_pw" href="http://www.baidu.com">忘记密码?</a> | <a href="register.html">注册</a>
+          <a id="lost_pw" href="http://www.baidu.com">忘记密码?</a> | <a href="register.jsp">注册</a>
         </form>
-        <div id="password_note"></div>
+
       </div>
     </div>
 

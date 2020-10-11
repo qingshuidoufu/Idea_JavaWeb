@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>便利驿站_注册</title>
-    <script type="text/javascript" src="register.js"></script>
-    <style>
+    <script type="text/javascript" src="jq_source/jquery-3.5.1.js"></script>
+    <script type="text/javascript " src="jq_script/register_jq.js"></script>
+    <style><%@ page contentType="text/html;charset=UTF-8" language="java" %>
         #image_box1{
             border:2px solid;
             border-radius:3px 3px 3px 3px;
@@ -67,7 +68,7 @@
             color: lightgray;
             position: relative;
             background-color: white;
-            margin-top: 10%;
+            margin-top: 20%;
             margin-bottom: 0%;
             height: 300px;
             width: 100%;
@@ -99,7 +100,7 @@
             box-shadow:2px 2px 10px #000;
             position: absolute;
             position: relative;
-            top: 20%;
+            top: 10%;
             margin-top: 5%;
             margin-left: 17%;
             border-style: solid;
@@ -163,40 +164,37 @@
         }
         #special_address{
             position: absolute;
-            top:36%;
             left:53%;
         }
         #password_note{
             color: red;
             position: absolute;
-            top:17%;
             left:58%;
         }
         #rePassword_note{
             color: red;
             position: absolute;
-            top:23%;
             left:58%;
         }
         #email_note{
             color: red;
             position: absolute;
-            top:50%;
             left:58%;
         }
         #phone_note{
             color: red;
             position: absolute;
-            top:63%;
             left:58%;
         }
         #btn{
+            visibility: hidden;
             color: red;
+            position: absolute;
+            left:75%;
         }
         #corret_num_note{
             color: red;
             position: absolute;
-            top:70%;
             left:58%;
         }
 
@@ -221,17 +219,21 @@
         <div class="form_naviga2" >
             登录密码:
             <input id=pwd type="password" onblur="checkPwd()">
+            <span id="password_note">
+                *由6-20位字母和数字组成
+            </span>
         </div>
         <div class="form_naviga2" >
            确认密码:
             <input id=repwd type="password" onblur="reCheckPwd()">
+            <span id="rePassword_note"></span>
         </div>
         <div class="form_naviga2" >
             商业名称:
             <input type="text">
         </div>
         <div class="form_naviga2" >
-            商业地址:&emsp;&nbsp;
+            商业地址:
             <select>
                 <option>霍格沃茨</option>
                 <option>加勒比</option>
@@ -253,6 +255,9 @@
                 <option>哥谭</option>
 
             </select>
+            <span id="special_address">
+            <input type="text"value="你心里">
+        </span>
 
         </div>
 
@@ -264,6 +269,7 @@
         <div class="form_naviga2" >
             电子邮箱:
             <input id =email type="text" onblur="checkEmail()">
+            <span id="email_note"></span>
         </div>
         <div class="form_naviga2" >
             QQ:
@@ -272,10 +278,13 @@
         <div class="form_naviga2" >
             手机:
             <input id="phone"  type="text" onblur="checkPhone()">
+            <span id="phone_note"></span>
+            <input id='btn'type="button" value='点击获取验证码' onclick='btn_onclick()' >
         </div>
         <div class="form_naviga2" >
             手机验证码:
             <input id="corret_num" type="text"onblur="checkCorretNum()">
+            <span id="corret_num_note"></span>
         </div>
         <div id="form_checkbox">
             <input type="checkbox" checked >我已阅读并同意<a id="hyper_link_license" href="http://www.baidu.com">《用户注册协议》</a>
@@ -284,19 +293,9 @@
             <input id="register_submit" type="submit">
         </div>
         <div class="form_naviga2">
-            <a class="hyper_link_forget" href="https://www.baidu.com">你忘记密码了吗?</a>我已有账号,我要 <a class="hyper_link_forget" href="loging.html">登录</a>
-        </div>
-        <div id="special_address">
-            <input type="text"value="你心里">
+            <a class="hyper_link_forget" href="https://www.baidu.com">你忘记密码了吗?</a>我已有账号,我要 <a class="hyper_link_forget" href="loging.jsp">登录</a>
         </div>
 
-            <div id="password_note">
-                *由6-20位字母和数字组成
-            </div>
-        <div id="rePassword_note"></div>
-        <div id="email_note"></div>
-        <div id="phone_note"></div>
-        <div id="corret_num_note"></div>
 
     </div>
 

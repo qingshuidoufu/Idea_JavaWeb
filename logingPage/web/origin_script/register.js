@@ -35,7 +35,7 @@ function checkEmail() {
 }
 function checkPhone() {
     var myPhone=document.getElementById("phone").value;
-    var phone_note=document.getElementById("phone_note");
+    const phone_note = document.getElementById("phone_note");
     if(!/1\d{10}/.test(myPhone)){
         phone_note.innerHTML="手机号码不正确";
     }
