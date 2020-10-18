@@ -214,7 +214,7 @@
         </div>
            <div class="form_naviga2" >
                登录账号:
-               <input type="text">
+               <input id="act" type="text">
            </div>
         <div class="form_naviga2" >
             登录密码:
@@ -230,25 +230,25 @@
         </div>
         <div class="form_naviga2" >
             商业名称:
-            <input type="text">
+            <input id="qiyename" type="text">
         </div>
         <div class="form_naviga2" >
             商业地址:
-            <select>
+            <select id="qiyeaddress1">
                 <option>霍格沃茨</option>
                 <option>加勒比</option>
                 <option>非洲</option>
                 <option>哥谭</option>
 
             </select>
-            <select >
+            <select id="qiyeaddress2">
                 <option>霍格沃茨</option>
                 <option>加勒比</option>
                 <option>非洲</option>
                 <option>哥谭</option>
 
             </select>
-            <select>
+            <select id="qiyeaddress3">
                 <option>霍格沃茨</option>
                 <option>加勒比</option>
                 <option>非洲</option>
@@ -256,14 +256,14 @@
 
             </select>
             <span id="special_address">
-            <input type="text"value="你心里">
+            <input  id="qiyeaddress4" type="text"value="你心里">
         </span>
 
         </div>
 
         <div class="form_naviga2" >
             负责人姓名:
-            <input type="text">
+            <input id="name" type="text">
         </div>
 
         <div class="form_naviga2" >
@@ -273,7 +273,7 @@
         </div>
         <div class="form_naviga2" >
             QQ:
-            <input type="text">
+            <input id="qq" type="text">
         </div>
         <div class="form_naviga2" >
             手机:
@@ -290,7 +290,7 @@
             <input type="checkbox" checked >我已阅读并同意<a id="hyper_link_license" href="http://www.baidu.com">《用户注册协议》</a>
         </div>
         <div class="form_naviga2">
-            <input id="register_submit" type="submit">
+            <input id="register_submit" type="button" value="提交" onclick=jump() >
         </div>
         <div class="form_naviga2">
             <a class="hyper_link_forget" href="https://www.baidu.com">你忘记密码了吗?</a>我已有账号,我要 <a class="hyper_link_forget" href="loging.jsp">登录</a>

@@ -17,4 +17,17 @@ $(function () {
             $("#username_note").text("*账号不能为空");
         }
     })
+    //用户名密码比较
+    $("#submit").click(function () {
+
+        if($("#username").val()=="admin"&&$("#log_pwd").val()=="12345678"){
+            sessionStorage.setItem("username",$("#username").val() );
+            sessionStorage.setItem("password",$("#log_pwd").val() );
+            window.location.href="LoginInfoRight.jsp";
+        }
+        else{
+            window.location.href="LoginInfoWrong.jsp";
+
+        }
+    })
 })

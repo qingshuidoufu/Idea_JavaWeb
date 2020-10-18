@@ -88,3 +88,16 @@ $(function () {
 
 })
 
+
+//处理跳转
+function jump() {
+    sessionStorage.setItem("act",$("#act").val())
+    sessionStorage.setItem("pwd",$("#pwd").val())
+    sessionStorage.setItem("qiyename",$("#qiyename").val())
+    sessionStorage.setItem("qiyeaddress",$("#qiyeaddress1").val()+$("#qiyeaddress2").val()+$("#qiyeaddress3").val()+$("#qiyeaddress4").val())
+    sessionStorage.setItem("name",$("#name").val())
+    sessionStorage.setItem("email",$("#email").val())
+    sessionStorage.setItem("qq",$("#qq").val())
+    sessionStorage.setItem("phone",$("#phone").val())
+    window.open("registerInfo.jsp");
+}
