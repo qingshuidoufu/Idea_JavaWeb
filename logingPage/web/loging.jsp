@@ -186,12 +186,12 @@
     <div id="big_loging_box">
       <img src="./img/login_red_bg.png">
       <div id="small_loging_box">
-        <form >
+        <form action="loginServlet" method="post">
           <br>
           <span>账号</span>
-          <input id="username" class="input_box" type="text" ><span id="username_note"></span>
-          <div id="checkPwd"><span>密码</span><input class="input_box" id="log_pwd" type="password" onblur="checkPwd()"><span id="password_note"></span></div>
-          <input  id="submit" type="button" value="登录" >
+          <input id="username" name="username" class="input_box" type="text" ><span id="username_note"></span>
+          <div id="checkPwd"><span>密码</span><input name="password" class="input_box" id="log_pwd" type="password" onblur="checkPwd()"><span id="password_note"></span></div>
+          <input  id="submit" type="submit" value="登录" >
           <input id="check" type="checkbox"checked>自动登录<br>
           <a id="lost_pw" href="http://www.baidu.com">忘记密码?</a> | <a href="register.jsp">注册</a>
         </form>

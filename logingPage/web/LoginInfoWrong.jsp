@@ -13,7 +13,7 @@
     <title>登录失败了</title>
 </head>
 <body>
-<h1>登录失败啦小宝贝!</h1>
+<h1>登录失败啦小宝贝!<br>账号或密码不正确咯</h1>
     <span>还剩 <span id="second_num"></span> 秒跳转</span>
 </body>
 </html>
